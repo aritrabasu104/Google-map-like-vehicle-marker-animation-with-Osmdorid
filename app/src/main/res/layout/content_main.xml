@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RadioGroup
+        android:id="@+id/vehicle_type_rg"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <RadioButton
+            android:id="@+id/vehicle_type_bus_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ambulance_img"
+            android:checked="true"
+            android:text="@string/vehicle_bus"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+        <RadioButton
+            android:id="@+id/vehicle_type_ambulance_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/bus_img"
+            android:text="@string/vehicle_ambulance"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/vehicle_details_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/vehicle_route_tv"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="@dimen/bus_desc_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:id="@+id/vehicle_number_tv"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="@dimen/bus_desc_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:id="@+id/vehicle_crowd_tv"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="@dimen/bus_desc_text_size"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

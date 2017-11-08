@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PathadisaNative</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="bus_icon_description">Bus Icon</string>
+    <string name="route_code_textview_text">Route : %1$s</string>
+    <string name="vehicle_no_textview_text">Vehicle no : %1$s</string>
+    <string name="crowd_textview_text">Crowd : %1$s</string>
+    <string name="bus_img">Bus Image</string>
+    <string name="ambulance_img">Ambulance Image</string>
+    <string name="vehicle_bus">Bus</string>
+    <string name="vehicle_ambulance">Ambulance</string>
+    <string name="hint_search_or_route_bus">Type Bus or Route</string>
+    <string name="action_gotoMyLoc_title">Go to My Loc</string>
+</resources>
